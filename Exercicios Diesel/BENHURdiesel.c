@@ -1,11 +1,10 @@
-/******************************************************************************
+// Exercício sugerido do Professor Benhur Stein. Enunciado abaixo//
 
-Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
 
-*******************************************************************************/
+// Suponha que o valor de um litro de diesel seja 666 centavos de real, e que um caminhão tem um tanque onde cabem 333 litros.
+// Faça um programa para calcular o valor necessário para encher o tanque inicialmente vazio.
+// O programa deve imprimir o valor separando reais e centavos (por exemplo, "234 reais e 27 centavos"). Dica: pra que serve o resto da divisão mesmo?
+
 #include <stdio.h>
 
 int main()
