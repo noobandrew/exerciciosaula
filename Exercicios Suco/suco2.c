@@ -34,7 +34,7 @@ int main()
 
     custolaranja = custolaranja * 1.25;
 
-    printf("O valor do litro da laranja e %.2f.\n Digite 1 para continuar ou qualquer outro numero para sair e tecle ENTER\n", custolaranja + customaodeobra);
+    printf("O valor do litro da laranja e %.2f.\n Digite 1 para continuar ou qualquer outro numero para saire tecle ENTER\n", custolaranja + customaodeobra);
     
     scanf("%d", &resp);
   
