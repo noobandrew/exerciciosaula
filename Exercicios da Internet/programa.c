@@ -2,9 +2,14 @@
 #include <conio.h>
 #include <stdlib.h>
 
+// Esse é o exercício do jogo de adivinhação do curso de C parte I da Alura.
+// Tomei a liberdade de adicionar bibliotecas e a função rand.
+
+
+
 int main(){
 	
-	// imprime o cabecalho do nosso jogo
+	
     srand(time(NULL));
 
 	printf("******************************************\n");
