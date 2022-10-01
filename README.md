@@ -5,49 +5,47 @@ Aqui, salvarei exercícios feitos nas aulas da UFSM ou em cursos online.
 ## Exemplo
 
 ```c
-// Variação do primeiro exercício sobre suco de laranja do prof Benhur.
+
+// Exercício proposto pelo professor Benhur Stein. Enunciado abaixo
+
+// Faça um programa para calcular o consumo de um carro. Para usar o programa, deve-se encher o tanque do carro,
+// anotar o valor no odômetro, rodar com o carro, encher novamente o tanque, e anotar novamente o valor do odômetro
+// e número de litros de combustível que couberam no tanque. O programa pede então os 3 valores anotados
+// e calcula o consumo (dividindo o número de quilômetros percorridos pelo número de litros usados nesse percurso
+// tem-se o consumo em km/l). Além de informar o consumo em km/l, o programa deve também informar em milhas por galão
+// e em litros para 100km, como é usual nos EUA e na Europa. Um galão equivale a 3,79 litros; uma milha a 1,609 km.
 
 
-// Enunciado:
-// Faça um programa para ler do usuário, calcular e imprimir o valor de um litro de suco de laranja.
-// Nesse caso, a única informação dada pelo professor era de que
-// o extraível de suco em 1kg de laranja era 800ml. O resto ficava
-// a cargo das entradas dadas pelo usuário.
-
-// Dessa vez, o professor já havia apresentado o tipo float. Para
-// encerrar o programa, decidi utilizar um "do while" que vi em
-// um programa de média aritmética.
-
-// 1.25 é o multiplicador que deixa a quantidade de suco extraído
-// proporcional matematicamente ao quilo da laranja (1000/800 = 1.25)
+  #include <stdio.h>
 
 
+   int main()
+   {
+     float odo1, odo2 = 0;
 
 
-#include <stdio.h>
+     printf("Digite o valor do odometro antes de começar a viagem\n");
+     scanf("%f", &odo1);
 
-int main()
-{
-    float customaodeobra;
-    float custolaranja;
-    int resp;
-    do
-  {
-    
-    printf("Digite o custo do quilo de laranja:\n");
-    scanf("%f", &custolaranja);
-    printf("Digite o custo de mao de obra e lucro:\n");
-    scanf("%f", &customaodeobra);
+     printf("Digite o valor do odometro ao final da viagem:\n");
+     scanf("%f", &odo2);
+     
+     float litros;
+     printf("Digite quantos litros de combustível couberam no último abastecimento:\n");
+     scanf("%f", &litros);
+     
+     float km = odo2 - odo1;
 
-    custolaranja = custolaranja * 1.25;
-
-    printf("O valor do litro da laranja e %.2f.\n Digite 1 para continuar ou qualquer outro numero para sair e tecle ENTER\n", custolaranja + customaodeobra);
-    
-    scanf("%d", &resp);
-  
-  }while (resp==1);
-    return 0;
-}
+     printf("Consumo: %.2f km/l", km/litros);
+     printf(" %.2f l/100km", litros/(km/100));
+     
+     float milhas = km / 1.609;
+     float gal = litros / 3.79;
+     printf(" %.2f milhas por galao\n", milhas/gal);
+     
+     return 0;
+     
+   }
 
 
 
