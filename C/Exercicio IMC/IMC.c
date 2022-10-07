@@ -1,3 +1,9 @@
+//Exercicio proposto pelo prof Benhur Stein
+//Faça um programa que lê um inteiro que corresponde a um ano, e informa se esse ano é bissexto.
+// Os anos mútiplos de 400 são bissextos; os demais múltiplos de 100 não são;
+// os demais múltiplos de 4 são.
+
+
 int main () {
 
   int ano;
